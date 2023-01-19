@@ -1,4 +1,34 @@
+
+
 <!DOCTYPE html>
 <html>
-    
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/mainlayout.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/e6c8e806-626a-42eb-b6c4-28281eeb55e3/pfpcircle.png?v=1671627666324">
+        <title><%= title %> </title>
+        <script src="https://kit.fontawesome.com/b52d0fc4c6.js" crossorigin="anonymous"></script>
+    </header>
+
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <a href="/">
+            <img src="https://cdn.glitch.global/e6c8e806-626a-42eb-b6c4-28281eeb55e3/pfp.jpg?v=1671627662803" class="logo">
+        </a>
+        <p class="maintitle">mvfflin testin ejs :D</p>
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/list">users</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <%- body %> 
+
+</body>
 </html>
