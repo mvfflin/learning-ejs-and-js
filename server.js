@@ -49,7 +49,7 @@ app.use(expressLayouts)
 app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
-    res.render('index', {
+    res.render('home', {
         layout: 'layouts/mainlayout',
         title: 'hi!'
     })
@@ -59,6 +59,13 @@ app.get('/list', (req, res) => {
     res.render('list', {
         layout: 'layouts/mainlayout',
         title: 'user list'
+    })
+})
+
+app.get('/register', (req, res) => {
+    res.render('register', {
+        layout: 'layouts/mainlayout',
+        title: 'register page'
     })
 })
 

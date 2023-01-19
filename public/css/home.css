@@ -1,0 +1,52 @@
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: rgb(209, 209, 209);
+}
+
+.bottun {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.register {
+    color: white;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(32, 32, 32);
+    color: white;
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        background-color: inherit;
+        padding: 14px 28px;
+        cursor: pointer;
+        margin-top: 10px;
+}
+
+.register:hover {
+    background-color: black;
+}
+
+.login:hover {
+    background-color: black;
+}
