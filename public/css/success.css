@@ -1,0 +1,26 @@
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+}
+
+.accountbtn {
+    color: white;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.accountbtn:hover {
+    background-color: black;
+}

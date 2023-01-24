@@ -1,0 +1,26 @@
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+}
+
+.registerbtn {
+    color: white;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.registerbtn:hover {
+    background-color: black;
+}

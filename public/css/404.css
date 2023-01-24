@@ -1,0 +1,23 @@
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+}
+
+.home {
+    margin-top: 30px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.home:hover {
+    background-color: black;
+}

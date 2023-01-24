@@ -1,0 +1,54 @@
+.form {
+    display: block
+}
+
+.form label {
+    color: white;
+}
+
+.form h1, .form p {
+    color: white;
+}
+
+hr {
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+input[type=text], input[type=password], input[type=checkbox], input[type=email] {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10%;
+    border: none;
+}
+
+.registerbtn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+    font-size: 20px;
+    /* smooth transition */
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.registerbtn:hover {
+    background-color: gray;
+    width: 210px;
+    font-size: 30px;
+}
