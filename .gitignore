@@ -1,3 +1,4 @@
 .env.local
 env.json
 env.js
+.prettierrc

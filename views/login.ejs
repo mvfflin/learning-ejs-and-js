@@ -1,23 +1,34 @@
-<link rel="stylesheet" type="text/css" href="/css/login.css">
+<link rel="stylesheet" type="text/css" href="/css/login.css" />
 <script src="javascripts/hidepw.js"></script>
 <script src="javascripts/login.js"></script>
 
 <form class="form" action="/admin/loading/login" method="post">
-    <h1>login</h1>
-    <p>login if u have an account</p>
-    <hr>
+	<h1>login</h1>
+	<p>login if u have an account</p>
+	<hr />
 
-    <label for="usernamemail"><b>username</b></label>
-    <input type="text" placeholder="username/email" name="usernamemail" id="usernamemail" required>
+	<label for="usernamemail"><b>username</b></label>
+	<input
+		type="text"
+		placeholder="username/email"
+		name="usernamemail"
+		id="usernamemail"
+		required
+	/>
 
-    <label for="psw"><b>password</b></label>
-    <input type="password" placeholder="enter password" name="psw" id="psw" required>
+	<label for="psw"><b>password</b></label>
+	<input
+		type="password"
+		placeholder="enter password"
+		name="psw"
+		id="psw"
+		required
+	/>
 
-    <label for="showpw">show pass</label>
-    <input type="checkbox" onclick="hidepw()" id="showpw">
+	<label for="showpw">show pass</label>
+	<input type="checkbox" onclick="hidepw()" id="showpw" />
 
-    <button type="submit" class="loginbtn">login</button>
+	<button type="submit" class="loginbtn">login</button>
 
-    <hr>
-
+	<hr />
 </form>

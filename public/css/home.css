@@ -29,9 +29,9 @@
 }
 
 .login {
-    background-color: rgb(32, 32, 32);
+    background-color: black;
     color: white;
-        position: relative;
+    position: relative;
         display: block;
         width: 200px;
         height: 50px;
