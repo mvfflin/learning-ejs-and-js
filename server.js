@@ -5,18 +5,17 @@ const app = express();
 const bcrypt = require("bcryptjs");
 const { user } = require("./public/javascripts/user");
 const mongoose = require("mongoose");
-const emailcheck = require("email-check");
 const Cookies = require("cookies");
-
-// delay function
-function delay(time) {
-	return new Promise((resolve) => setTimeout(resolve, time));
-}
-// end of delay function
 
 // database connect
 
-mongoose.connect(env.uri, () => console.log("connected to db via mongoose"));
+mongoose.connect(
+	env.uri,
+	{
+		dbName: "maindb",
+	},
+	() => console.log("connected db")
+);
 // end of database connect
 
 port = 9046;
@@ -41,15 +40,21 @@ app.post("/admin/loading/login", async (req, res) => {
 	const findUser = await user.findOne({
 		username: usernamemail,
 	});
-	let cookie = new Cookies(req, res);
+	const checkPass = bcrypt.compareSync(password, findUser.password);
 
 	// start
 	if (!findUser) {
+		// if the username isn't registered
 		res.redirect("/error/usernotfound");
-	} else if (!checkPass == bcrypt.compareSync(password, findUser.password)) {
-		res.redirect("/error/wrongpassword");
-	} else if (findEmail && checkPass) {
-		res.redirect("/success/loggedin");
+	} else if (findUser) {
+		// if the username is registered
+		if (checkPass != true) {
+			// if password is wrong
+			res.redirect("/error/wrongpassword");
+		} else if (checkPass == true) {
+			// if password is correct
+			res.redirect("/success/loggedin");
+		}
 	}
 });
 
@@ -59,7 +64,6 @@ app.post("/admin/loading/register", async (req, res) => {
 	const password = await req.body.psw;
 
 	// validations
-	const verifyEmail = emailcheck(email);
 	const findUser = await user.findOne({
 		username: username,
 	});
@@ -78,8 +82,6 @@ app.post("/admin/loading/register", async (req, res) => {
 		res.redirect("/error/usernametaken");
 	} else if (findEmail) {
 		res.redirect("/error/emailused");
-	} else if (verifyEmail) {
-		res.redirect("/error/emailnotavailable");
 	} else {
 		await user.create({
 			username: username,
@@ -92,7 +94,7 @@ app.post("/admin/loading/register", async (req, res) => {
 		console.log("email : " + email);
 		console.log("password : " + hashPass);
 		console.log("created at: " + date);
-		res.redirect("/success");
+		res.redirect("/success/registered");
 	}
 });
 
@@ -141,6 +143,13 @@ app.get("/home", (req, res) => {
 });
 
 // errors
+app.get("/error/wrongpassword", (req, res) => {
+	res.render("error/wrongpassword", {
+		layout: "layouts/mainlayout",
+		title: "error!",
+	});
+});
+
 app.get("/error/usernotfound", (req, res) => {
 	res.render("error/usernotfound", {
 		layout: "layouts/mainlayout",

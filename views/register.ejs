@@ -1,26 +1,40 @@
-<link rel="stylesheet" type="text/css" href="/css/register.css">
+<link rel="stylesheet" type="text/css" href="/css/register.css" />
 <script src="javascripts/hidepw.js"></script>
 <script src="javascripts/register.js"></script>
 
 <form class="form" action="/admin/loading/register" method="post">
-    <h1>register</h1>
-    <p>register right here if u dont have an account</p>
-    <hr>
+	<h1>register</h1>
+	<p>register right here if u dont have an account</p>
+	<hr />
 
-    <label for="username"><b>username</b></label>
-    <input type="text" placeholder="enter username" name="username" id="username" required>
-    
-    <label for="email"><b>email</b></label>
-    <input type="email" placeholder="enter email" name="email" id="email" required>
-    
-    <label for="psw"><b>password</b></label>
-    <input type="password" placeholder="enter password" name="psw" id="psw" required>
+	<label for="username"><b>username</b></label>
+	<input
+		type="text"
+		placeholder="enter username"
+		name="username"
+		id="username"
+		required />
+	<div id="uservalidator" class="uservalidator">username already taken.</div>
+	<label for="email"><b>email</b></label>
+	<input
+		type="email"
+		placeholder="enter email"
+		name="email"
+		id="email"
+		onkeyup="validation()"
+		required />
+	<div id="emailvalidator" class="emailvalidator">invalid email.</div>
+	<label for="psw"><b>password</b></label>
+	<input
+		type="password"
+		placeholder="enter password"
+		name="psw"
+		id="psw"
+		required />
+	<label for="showpw">show pass</label>
+	<input type="checkbox" onclick="hidepw()" id="showpw" />
 
-    <label for="showpw">show pass</label>
-    <input type="checkbox" onclick="hidepw()" id="showpw">
+	<button id="registerbtn" type="submit" class="registerbtn">register</button>
 
-    <button type="submit" class="registerbtn">register</button>
-
-    <hr>
-
+	<hr />
 </form>
