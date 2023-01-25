@@ -1,18 +1,18 @@
 .listuser {
-    color: white;
-    display: list-item;
-    margin-top: 20px;
-    border-color: white;
+	color: white;
+	margin-top: 20px;
+	border-color: white;
 }
 
 .listuser li {
-    margin: 10px;
+	margin: 20px;
+	display: inline;
 }
 
 .title {
-    color: white;
+	color: white;
 }
 
 .subtitle {
-    color: white;
+	color: white;
 }
