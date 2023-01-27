@@ -4,6 +4,8 @@
 <p class="subtitle">thx for registering in my web.<br />i do appreciate it.</p>
 <ul class="listuser">
 	<% accounts.forEach(account => { %>
-	<li><%= account.username %></li>
+	<li>
+		<a href="/account/users/<%= account.username %>"><%= account.username %></a>
+	</li>
 	<% }) %>
 </ul>

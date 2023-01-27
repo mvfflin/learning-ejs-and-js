@@ -14,6 +14,9 @@ const userSchema = new schema({
 	registered: {
 		type: String,
 	},
+	desc: {
+		type: String,
+	},
 });
 
 const user = mongoose.model("user", userSchema);

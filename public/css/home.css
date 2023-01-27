@@ -1,52 +1,111 @@
 .title {
-    color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titlee {
+	color: white;
+	margin: 0 auto;
 }
 
 .subtitle {
-    color: rgb(209, 209, 209);
+	color: rgb(209, 209, 209);
 }
 
 .bottun {
-    width: 200px;
-    text-align: center;
-    position: relative;
-    top: 10px;
-    margin: 0 auto;
-    padding: 30px 0;
+	width: 200px;
+	text-align: center;
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	padding: 30px 0;
 }
 
 .register {
-    color: white;
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    cursor: pointer;
+	color: white;
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	cursor: pointer;
 }
 
 .login {
-    background-color: black;
-    color: white;
-    position: relative;
-        display: block;
-        width: 200px;
-        height: 50px;
-        font-size: 20px;
-        border: none;
-        background-color: inherit;
-        padding: 14px 28px;
-        cursor: pointer;
-        margin-top: 10px;
+	background-color: black;
+	color: white;
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	cursor: pointer;
+	margin-top: 10px;
 }
 
 .register:hover {
-    background-color: black;
+	background-color: black;
 }
 
 .login:hover {
-    background-color: black;
+	background-color: black;
+}
+
+/* for homevisited.ejs */
+.accountbtn,
+.logoutbtn {
+	color: white;
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	cursor: pointer;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.accountbtn a {
+	text-decoration: none;
+	color: white;
+}
+
+.accountbtn:hover,
+.logoutbtn:hover {
+	background-color: black;
+}
+
+.desc {
+	color: white;
+}
+
+/* animations */
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 528px;
+	}
+}
+
+@keyframes blink {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
 }

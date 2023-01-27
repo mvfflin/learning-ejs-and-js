@@ -1,0 +1,82 @@
+.title {
+	color: white;
+}
+
+.subtitle {
+	color: white;
+}
+
+.descview {
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	white-space: pre-line;
+}
+
+.descedit {
+	resize: none;
+	overflow: hidden;
+	max-width: 300px;
+	min-width: 300px;
+	min-height: 100px;
+	max-height: 300px;
+	background-color: rgb(8, 8, 8);
+	padding: 20px;
+	color: white;
+	border-color: black;
+	outline: none;
+	border-radius: 20px;
+	font-size: 20px;
+	font-family: "Montserrat";
+}
+
+.descedit:is(:focus) {
+	border-color: white;
+	background-color: black;
+}
+
+.editdescbtn {
+	display: block;
+	padding: 14px 28px;
+	margin: 20px auto;
+	font-size: 20px;
+	background-color: inherit;
+	border: none;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+	color: white;
+}
+
+.editdescbtn:hover {
+	background-color: black;
+}
+
+.labeldesc {
+	color: white;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.wtlg {
+	color: white;
+}
+
+.logoutbtn {
+	color: white;
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	cursor: pointer;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.logoutbtn:hover {
+	background-color: black;
+}

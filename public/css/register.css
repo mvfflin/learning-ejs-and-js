@@ -39,17 +39,13 @@ input[type="email"] {
 .emailvalidator {
 	display: none;
 	color: white;
-	width: 200px;
-	height: 30px;
-	background-color: rgb(119, 0, 0);
 	position: relative;
 	text-align: center;
 	margin: auto;
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 15px;
 	font-style: normal;
-	padding: 2px;
-	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
 .registerbtn {

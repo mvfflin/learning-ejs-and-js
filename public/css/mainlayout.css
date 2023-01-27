@@ -11,7 +11,7 @@ body {
 	text-align: center;
 	position: relative;
 	top: 200px;
-	margin: 0 auto;
+	margin: auto auto;
 }
 
 /* navigation bar */
@@ -88,6 +88,14 @@ body {
 	margin-top: 45px;
 }
 
+.midtitle {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	padding-left: 400px;
+	color: white;
+}
+
 /* navbar responsive */
 @media (max-width: 952px) {
 	nav ul li a {
@@ -96,6 +104,10 @@ body {
 }
 
 @media (max-width: 858px) {
+	.midtitle {
+		display: none;
+	}
+
 	#check:checked ~ .checkbtn {
 		font-size: 35px;
 	}

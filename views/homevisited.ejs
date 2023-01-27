@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/css/home.css" />
+
+<div class="title">
+	<h1 class="titlee" id="titlee">welcome to myself learning ejs.</h1>
+</div>
+<h2 class="subtitle">welcome back, <%= username %></h2>
+<p class="desc">u are registered since : <%= registeredsince %></p>
+
+<div class="bottun">
+	<button
+		class="accountbtn"
+		type="button"
+		onclick="window.location.href='/account/<%= username %>/admin=<%= password %>'">
+		account page
+	</button>
+	<form action="/account/<%= username %>/<%= password %>/logout" method="post">
+		<button class="logoutbtn" type="submit">log out</button>
+	</form>
+</div>

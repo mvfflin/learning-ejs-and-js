@@ -2,7 +2,7 @@
 <script src="javascripts/hidepw.js"></script>
 <script src="javascripts/login.js"></script>
 
-<form class="form" action="/admin/loading/login" method="post">
+<form class="form" action="/loading/login" method="post">
 	<h1>login</h1>
 	<p>login if u have an account</p>
 	<hr />
@@ -13,8 +13,7 @@
 		placeholder="username/email"
 		name="usernamemail"
 		id="usernamemail"
-		required
-	/>
+		required />
 
 	<label for="psw"><b>password</b></label>
 	<input
@@ -22,8 +21,7 @@
 		placeholder="enter password"
 		name="psw"
 		id="psw"
-		required
-	/>
+		required />
 
 	<label for="showpw">show pass</label>
 	<input type="checkbox" onclick="hidepw()" id="showpw" />

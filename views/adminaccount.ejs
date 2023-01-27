@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="/css/adminaccount.css" />
+<script>
+	function auto_grow(element) {
+		element.style.height = "5px";
+		element.style.height = element.scrollHeight + "px";
+	}
+</script>
+
+<h1 class="title">your profile page</h1>
+<h2 class="subtitle">hi <%= username %></h2>
+<h5 class="descview"><%= userdesc %></h5>
+<form
+	class="editing"
+	action="/account/editdescription/<%= username %>/<%= password %>"
+	method="post">
+	<label for="desc" class="labeldesc">edit ur description here</label>
+	<% if (locals.message) { %>
+	<p class="labeldescsub"><%= message %></p>
+	<% } %>
+	<textarea
+		type="text"
+		id="desc"
+		name="desc"
+		class="descedit"
+		oninput="auto_grow(this)"
+		required></textarea>
+	<button type="submit" class="editdescbtn">edit description</button>
+</form>
+
+<form
+	class="logout"
+	action="/account/<%= username %>/<%= password %>/logout"
+	method="post">
+	<p class="wtlg">want to log out?</p>
+	<button class="logoutbtn" type="submit">log out</button>
+</form>

@@ -9,10 +9,19 @@
 	display: inline;
 }
 
+.listuser li a {
+	text-decoration: none;
+	color: white;
+}
+
 .title {
 	color: white;
 }
 
 .subtitle {
 	color: white;
+}
+
+.listuser li a:hover {
+	font-weight: bold;
 }
