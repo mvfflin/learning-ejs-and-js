@@ -11,6 +11,7 @@
 		"mongoose": "^6.8.4",
 		"mongoose-schema-parser": "^0.2.5",
 		"node-gyp": "^9.3.1",
-		"nodemon": "^2.0.20"
+		"nodemon": "^2.0.20",
+		"dotenv": "^16.0.3"
 	}
 }
