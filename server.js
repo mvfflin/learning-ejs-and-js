@@ -4,7 +4,8 @@ const app = express();
 const bcrypt = require("bcryptjs");
 const { user } = require("./public/javascripts/user");
 const mongoose = require("mongoose");
-const Cookies = require("cookies");
+const Cookies = require("cookies")
+require("dotenv").config();
 
 let onehour = new Date().setHours() + 1;
 
