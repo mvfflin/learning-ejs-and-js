@@ -11,7 +11,7 @@ let onehour = new Date().setHours() + 1;
 // database connect
 
 mongoose.connect(
-	env.uri,
+	process.env.URI,
 	{
 		dbName: "maindb",
 	},

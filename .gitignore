@@ -3,3 +3,5 @@ env.json
 env.js
 .prettierrc
 test.ts
+node_modules/*
+package-lock.json
